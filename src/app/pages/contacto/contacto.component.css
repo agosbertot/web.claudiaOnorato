@@ -1,0 +1,12 @@
+.titulo {
+    color: #679b9b;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+    color: #679b9b;
+    font-family: 'Lato', sans-serif;
+}
