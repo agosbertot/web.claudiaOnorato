@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cfa90084-03af-475f-9094-f15e2bd8570a/deploy-status)](https://app.netlify.com/sites/xenodochial-dijkstra-41a5df/deploys)
+
 # ClaudiaOnorato
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
