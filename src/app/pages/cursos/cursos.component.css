@@ -1,10 +1,16 @@
 .titulo {
     color: #679b9b;
     font-family: 'Dancing Script', cursive;
-    size: 40px;
 }
 
 .descrip {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lato', sans-serif;
     size: 20px;
+}
+
+.boton {
+    color: #ff9a76;
+    size: 30px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #ff9a76;
 }

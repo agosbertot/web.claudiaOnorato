@@ -1,7 +1,11 @@
 .menu {
-    color: #ffeadb !important;
+    color: #ff9a76 !important;
     letter-spacing: 1px;
     padding-right: 15px;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+}
+
+.borde {
+    border: 1px solid #ff9a76;
 }

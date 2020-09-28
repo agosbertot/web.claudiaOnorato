@@ -1,0 +1,23 @@
+.boton {
+    color: #ff9a76;
+    size: 30px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #ff9a76;
+}
+
+.texto {
+    font-family: 'Lato', sans-serif;
+    size: 10px;
+}
+
+.unidad {
+    font-family: 'Lato', sans-serif;
+    size: 40px;
+    color: #679b9b;
+    font-weight: bold;
+}
+
+.titulo {
+    color: #679b9b;
+    font-family: 'Dancing Script', cursive;
+}
