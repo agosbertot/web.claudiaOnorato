@@ -9,3 +9,13 @@
 .borde {
     border: 1px solid #ff9a76;
 }
+
+.titulo {
+    color: #679b9b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.parrafo {
+    text-align: justify;
+}
