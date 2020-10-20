@@ -10,6 +10,7 @@ import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
 import { FilosofiaComponent } from './mi-perfil/filosofia/filosofia.component';
 import { TrayectoriaComponent } from './mi-perfil/trayectoria/trayectoria.component';
 import { MisionComponent } from './mi-perfil/mision/mision.component';
+import { EquipoComponent } from './miPerfil/equipo/equipo.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'miPerfil/filosofia', component: FilosofiaComponent},
   { path: 'miPerfil/trayectoria', component: TrayectoriaComponent},
   { path: 'miPerfil/mision', component: MisionComponent},
+  { path: 'miPerfil/equipo', component: EquipoComponent},
   { path: 'servicios', component: ServiciosComponent},
   { path: 'cursos', component: CursosComponent},
   { path: 'cursos/tallerEducativo', component: TallerEducativoComponent},
