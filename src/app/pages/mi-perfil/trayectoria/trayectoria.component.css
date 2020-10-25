@@ -1,0 +1,13 @@
+.titulo {
+    color: #679b9b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.parrafo {
+    text-align: justify;
+}
+
+.borde {
+    border: 1px solid #28abb9;
+}

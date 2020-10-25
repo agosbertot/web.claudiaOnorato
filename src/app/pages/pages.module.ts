@@ -11,12 +11,13 @@ import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
 import { FilosofiaComponent } from './mi-perfil/filosofia/filosofia.component';
 import { TrayectoriaComponent } from './mi-perfil/trayectoria/trayectoria.component';
 import { MisionComponent } from './mi-perfil/mision/mision.component';
+import { EquipoComponent } from './miPerfil/equipo/equipo.component';
 
 
 
 @NgModule({
-  declarations: [ContactoComponent, InicioComponent, CursosComponent, ServiciosComponent, TallerEducativoComponent, TallerPadresComponent, MiPerfilComponent, FilosofiaComponent, TrayectoriaComponent, MisionComponent],
-  exports:[ContactoComponent, InicioComponent, CursosComponent, ServiciosComponent, TallerEducativoComponent, TallerPadresComponent, MiPerfilComponent,FilosofiaComponent, TrayectoriaComponent, MisionComponent],
+  declarations: [ContactoComponent, InicioComponent, CursosComponent, ServiciosComponent, TallerEducativoComponent, TallerPadresComponent, MiPerfilComponent, FilosofiaComponent, TrayectoriaComponent, MisionComponent, EquipoComponent],
+  exports:[ContactoComponent, InicioComponent, CursosComponent, ServiciosComponent, TallerEducativoComponent, TallerPadresComponent, MiPerfilComponent,FilosofiaComponent, TrayectoriaComponent, MisionComponent, EquipoComponent],
   imports: [
     CommonModule,
     PagesRoutingModule
