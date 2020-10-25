@@ -11,6 +11,8 @@ import { FilosofiaComponent } from './mi-perfil/filosofia/filosofia.component';
 import { TrayectoriaComponent } from './mi-perfil/trayectoria/trayectoria.component';
 import { MisionComponent } from './mi-perfil/mision/mision.component';
 import { EquipoComponent } from './miPerfil/equipo/equipo.component';
+import { SuccessComponent } from './success/success.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent},
@@ -24,7 +26,9 @@ const routes: Routes = [
   { path: 'cursos/tallerEducativo', component: TallerEducativoComponent},
   { path: 'cursos/tallerPadres', component: TallerPadresComponent},
   { path: 'contacto', component: ContactoComponent},
+  { path: 'success', component: SuccessComponent},
   { path: '', component: InicioComponent},
+  { path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({

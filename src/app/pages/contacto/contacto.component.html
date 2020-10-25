@@ -4,25 +4,35 @@
             <h1 class="titulo">Contáctame</h1>
             <br>
             <br>
-            <form name="contact" method="POST" data-netlify="true">
+            <form [formGroup]="contactForm" name="contactForm" (ngSubmit)="onSubmit()">
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="nombre" style="font-family: 'Lato', sans-serif; color: #28abb9;">Nombre</label>
-                        <input name="nombre" type="text" class="form-control d-block" id="Nombre">
+                        <input formControlName="nombre" name="nombre" type="text" class="form-control d-block"
+                            id="Nombre">
                     </div>
                     <div class="form-group col-12">
                         <label for="email" style="font-family: 'Lato', sans-serif; color: #28abb9;">Email</label>
-                        <input name="email" type="email" class="form-control d-block" id="Email">
+                        <input formControlName="email" name="email" type="email" class="form-control d-block"
+                            id="Email">
                     </div>
                     <div class="form-group col-12">
-                        <label for="mensaje" style="font-family: 'Lato', sans-serif; color: #28abb9;">Asunto</label>
-                        <textarea name="mensaje" class="form-control d-block" id="mensaje" rows="5"></textarea>
+                        <label for="asunto" style="font-family: 'Lato', sans-serif; color: #28abb9;">Asunto</label>
+                        <textarea formControlName="asunto" name="asunto" class="form-control d-block" id="mensaje"
+                            rows="5"></textarea>
                     </div>
+                    <!-- <div class="inputContainer">
+                        <button type="submit" [disabled]="contactForm.invalid">Enviar mensaje</button>
+                      </div> -->
                     <input type="submit" class="btn btn-block"
                         style="background-color: #28abb9; color: #ffeadb; font-family: 'Lato', sans-serif; size: 20px;"
                         value="Enviar Mensaje">
                 </div>
             </form>
+            <!-- <div class="error" [class.hidden]="errorMsg.length == 0">
+                <p>{{errorMsg}}</p>
+                <span (click)="closeError()" class="close">✖︎</span>
+            </div> -->
         </div>
 
 
