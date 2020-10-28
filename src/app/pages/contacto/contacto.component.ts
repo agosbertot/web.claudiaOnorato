@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { NetlifyService } from 'src/app/netlify.service';
+import { NetlifyFormsService } from 'src/app/netlify-forms/netlify-forms.service';
 
 @Component({
   selector: 'app-contacto',
@@ -12,32 +12,24 @@ export class ContactoComponent implements OnInit {
 
   contactForm = this.fb.group({
     nombre: ['', Validators.required],
-    email: ['', Validators.required, Validators.email],
+    email: ['', [Validators.email, Validators.required]],
     asunto: ['', Validators.required],
   });
 
-  errorMsg = '';
-
   constructor(private fb: FormBuilder,
-    private netlify: NetlifyService,
-    private router: Router) { }
+    private router: Router,
+    private netlifyForms: NetlifyFormsService) { }
 
   ngOnInit(): void {
   }
 
-  closeError() {
-    this.errorMsg = '';
-  }
-
   onSubmit() {
-    this.netlify.submitContacto(this.contactForm.value).subscribe(
+    this.netlifyForms.submitContact(this.contactForm.value).subscribe(
       () => {
         this.contactForm.reset();
         this.router.navigateByUrl('/success');
-      },
-      err => {
-        this.errorMsg = err;
       }
     );
   }
+
 }
